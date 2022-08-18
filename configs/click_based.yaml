@@ -1,0 +1,10 @@
+title: 'Spline_test'
+save_path: './saved/'
+xlim: [-1, 6]
+ylim: [-1, 6]
+speed_accel_parameter: 0.2
+speed_decay_parameter: 0.8
+total_time_length: 5
+num_timesteps: 200
+num_delta_t: 200_000
+s: 0
