@@ -36,16 +36,16 @@ python run.py --config configs/custom_speed.yaml
 ```
 
 ## yaml explanation
-title: 'Spline_test' - The title of the run.\\
-save_path: './saved/' - The save path.\\
-xlim: [-1, 6]  - xlim of figure.\\
-ylim: [-1, 6]  - ylim of figure.\\
-start_point_pos: [0, 0]  - The start point of the spline (optional).\\
-final_point_pos: [5, 0]  - The final point of the spline (optional).\\
-via_speed: [1.0, 2.0, 3.0, 3.0, 3.0]  - Via points of your custom speed profile (optional). \\
-speed_accel_parameter: 0.2  - The ratio of timesteps until which the trajectory accelerates to the speed from 0 to the initial speed of your speed profile. Set 0 if you don't want it.\\
-speed_decay_parameter: 0.8  - The ratio of timesteps from which the trajectory decelerates to the speed from the final speed of your speed profile to 0. Set 1 if you don't want it.\\
-total_time_length: 5  - Total time length of the trajectory. Speed profile is normalized to satisfy total_time_length. \\
-num_timesteps: 200  - The number of timesteps of your spline.\\
-num_delta_t: 200_000  - The number of timesteps for numerical integration & derivation.\\
-s: 0  - The smoothing factor for 'scipy.integrate'. if s is larger than 0, the spline will be smoother but might not go through the via points. 
+* title: 'Spline_test' - The title of the run.
+* save_path: './saved/' - The save path.
+* xlim: [-1, 6]  - xlim of figure.
+* ylim: [-1, 6]  - ylim of figure.
+* start_point_pos: [0, 0]  - The start point of the spline (optional).
+* final_point_pos: [5, 0]  - The final point of the spline (optional).
+* via_speed: [1.0, 2.0, 3.0, 3.0, 3.0]  - Via points of your custom speed profile (optional). 
+* speed_accel_parameter: 0.2  - The ratio of timesteps until which the trajectory accelerates to the speed from 0 to the initial speed of your speed profile. Set 0 if you don't want it.
+* speed_decay_parameter: 0.8  - The ratio of timesteps from which the trajectory decelerates to the speed from the final speed of your speed profile to 0. Set 1 if you don't want it.
+* total_time_length: 5  - Total time length of the trajectory. Speed profile is normalized to satisfy total_time_length. 
+* num_timesteps: 200  - The number of timesteps of your spline.
+* num_delta_t: 200_000  - The number of timesteps for numerical integration & derivation.
+* s: 0  - The smoothing factor for 'scipy.integrate'. if s is larger than 0, the spline will be smoother but might not go through the via points. 
