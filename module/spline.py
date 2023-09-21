@@ -108,6 +108,8 @@ class SplineMaker:
         self.order = 'time_ascending'
         self.title = title
         self.save_path = save_path
+        if not os.path.exists(save_path):
+            os.mkdir(save_path)
         if self.start_point_pos is None:
             self.click_level = 0
         else:
